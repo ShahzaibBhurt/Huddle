@@ -1,0 +1,132 @@
+body{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.main{
+    background: url(../img/main.png);
+    background-size: cover;
+}
+.header{
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 14px 0px;
+}
+.card{
+    border: 0;
+    color: white;
+    background-color: transparent;
+}
+.blue{
+    border-radius: 0 16.9263px 16.9263px 0;
+    background: #3A9BFE;
+}
+.purple{
+    border-radius: 0 16.9263px 16.9263px 0;
+    background: #8A3BD5;
+}
+.green{
+    border-radius: 0 16.9263px 16.9263px 0;
+    background: #3DC373;
+}
+.card img{
+    border-radius: 16.9263px 0 0 16.9263px;
+}
+.card-title{
+    font-size: 10px;
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+.card-text small{
+    font-size: 10px;
+    position: absolute;
+    bottom: 20px;
+}
+.card-text{
+    font-size: 1.7vw;
+}
+.invite-box{
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+}
+.invite-box-des{
+    font-weight: 100;
+    color: gainsboro;
+    opacity: 0.7;
+    font-size: 14px;
+}
+.invite-box input{
+    width: -webkit-fill-available;
+    padding: 15px 13px;
+    font-size: 16px;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 2px solid gainsboro;
+    color: gainsboro;
+}
+.invite-box input::placeholder {
+  color: gainsboro;
+  opacity: 1; /* Firefox */
+  font-size: 13px;
+}
+
+.invite-box input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gainsboro;
+}
+
+.invite-box input::-ms-input-placeholder { /* Microsoft Edge */
+    color: gainsboro;
+}
+.invite-box button{
+    position: absolute;
+    border-radius: 12px;
+    padding: 10px 25px;
+    margin-top: 8.43px;
+    margin-left: -213px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+@media (max-width:767px){
+    .card-title{
+        font-size:1.6vw;
+    }
+    .card-text{
+        font-size: 3vw;
+    }
+    .card-text small{
+        font-size:1.6vw;
+    }
+}
+@media (max-width:515px){
+    .invite-container{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+    .card-title{
+        font-size:2.6vw;
+    }
+    .card-text{
+        font-size: 4.7vw;
+        margin-right: 5px !important;
+    }
+    .card-text small{
+        font-size:2.6vw;
+    }
+    .invite-box button{
+        visibility: hidden;
+    }
+    .invite-box button:after{
+        visibility: visible;
+        content: 'Add me';
+        position: absolute;
+        border-radius: 12px;
+        padding: 10px 25px;
+        margin-top: -10px;
+        margin-left: -81px;
+        background: white;
+    }
+}
