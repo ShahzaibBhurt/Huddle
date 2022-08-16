@@ -43,7 +43,8 @@ body{
     bottom: 20px;
 }
 .card-text{
-    font-size: 1.7vw;
+/*    font-size: 1.7vw;*/
+    font-size: 1.4rem;
 }
 .invite-box{
     background: rgba(0, 0, 0, 0.4);
@@ -60,7 +61,7 @@ body{
 .invite-box input{
     width: -webkit-fill-available;
     padding: 15px 13px;
-    font-size: 16px;
+    font-size: 15.8px;
     border-radius: 16px;
     background-color: transparent;
     border: 2px solid gainsboro;
@@ -83,13 +84,17 @@ body{
     position: absolute;
     border-radius: 12px;
     padding: 10px 25px;
-    margin-top: 8.43px;
-    margin-left: -213px;
+    margin-top: 0.5rem;
+    margin-left: -211px;
     font-size: 14px;
     font-weight: 600;
     border: none;
 }
-
+@media (max-width:1205px){
+    .card-text{
+        font-size:1.7vw;
+    }
+}
 @media (max-width:767px){
     .card-title{
         font-size:1.6vw;
@@ -118,6 +123,7 @@ body{
     }
     .invite-box button{
         visibility: hidden;
+        right: 52px;
     }
     .invite-box button:after{
         visibility: visible;
@@ -126,7 +132,7 @@ body{
         border-radius: 12px;
         padding: 10px 25px;
         margin-top: -10px;
-        margin-left: -81px;
+        right: 0px;
         background: white;
     }
 }
