@@ -1,4 +1,5 @@
 $(document).ready(()=>{
+    checkPosition();
     $('#whitlist-form').submit((e)=>{
         e.preventDefault();
         var email = $('#email').val()
@@ -23,3 +24,11 @@ $(document).ready(()=>{
         })
     })
 })
+$(document).on('load', $(window).bind("resize", checkPosition));
+function checkPosition(){
+    if($(window).width() < 498){
+        $('.invite-btn').html('Add me')
+    } else {
+        $('.invite-btn').html('Add me to the waitlist')
+    }
+}
