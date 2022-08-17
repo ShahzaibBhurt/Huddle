@@ -122,10 +122,10 @@ body{
         font-size:2.6vw;
     }
     .invite-box button{
-        visibility: hidden;
+/*         visibility: hidden; */
         right: 52px;
     }
-    .invite-box button:after{
+/*     .invite-box button:after{
         visibility: visible;
         content: 'Add me';
         position: absolute;
@@ -134,5 +134,5 @@ body{
         margin-top: -10px;
         right: 0px;
         background: white;
-    }
+    } */
 }
